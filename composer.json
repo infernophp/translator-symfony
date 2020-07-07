@@ -1,0 +1,28 @@
+{
+  "name": "inferno/translator-symfony",
+  "description": "inferno translator symfony component",
+  "type" : "library",
+  "keywords": [
+    "inferno",
+    "translator",
+    "symfony"
+  ],
+  "homepage": "https://github.com/infernophp/translator-symfony",
+  "license": "MIT",
+  "require": {
+    "php": ">=7.4",
+    "psr/container": "^1.0",
+    "symfony/translation": "^5.1"
+  },
+  "require-dev": {
+    "phpstan/phpstan": "^0.12.32"
+  },
+  "autoload": {
+    "psr-4": {
+      "Inferno\\Translator\\Symfony": "src"
+    }
+  },
+  "scripts": {
+    "analyze": "phpstan analyse -l 7 src"
+  }
+}
